@@ -1,7 +1,7 @@
 By: Ken Fukutomi  
 Email: [kfukutom@umich.edu](mailto:kfukutom@umich.edu)  
 Course: EECS 398 - Final Project  
-Repository: [https://github.com/kfukutom/boston-farecast](https://github.com/kfukutom/boston-farecast)
+Repository: [https://github.com/kfukutom/analysis](https://github.com/kfukutom/xgboost-ml-fare)
 
 ---
 
