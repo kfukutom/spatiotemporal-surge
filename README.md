@@ -143,9 +143,7 @@ After fitting the model, I evaluated it on a holdout test set. The baseline perf
 
 ## Final Model
 
-To push beyond the limitations of regression-based baselines, I transitioned to XGBoost, a gradient boosting framework optimized for structured data prediction. After feature engineering with log_distance, sin_hour, and temporal flags (weekend/peak-hour), I tuned hyperparameters including tree depth, learning rate, and regularization parameters using cross-validation.
-
-This shift from linear methods to boosting allowed the model to uncover nonlinear spatial-temporal interactions in ride data that traditional regression could not capture. The final XGBoost model achieved an r-squared score above 0.85, with substantial reductions in both RMSE and MAE, representing an level of accuracy for fare prediction tasks. By adopting XGBoost, the project demonstrates how advanced ensemble methods can dramatically improve predictive performance in real-world urban mobility datasets, scaling effectively while preserving robustness across varied conditions.
+This shift from linear methods to boosting allowed the model to uncover nonlinear spatiotemporal interactions in ride data, such as how surge behavior varies across routes, peak hours, and weather conditions. The final XGBoost model captured these dynamic space–time patterns far more effectively than traditional regression, leading to significant reductions in RMSE and MAE. By integrating spatial context (origin–destination routes) with temporal cycles (hour-of-day, day-of-week, peak-hour flags), the project highlights how ensemble learning can reveal the complex structure of urban mobility systems and provide more reliable predictions under real-world city dynamics.
 
 <!-- Load MathJax for LaTeX rendering -->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
